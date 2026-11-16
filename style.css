@@ -1,0 +1,45 @@
+.body{
+    margin: 0px;
+    height: 100vh;
+    background: linear-gradient(to bottom, #33cccc 80%, #999999 20%);
+    background-size: cover;
+}
+
+.triangle{
+    clip-path: polygon(0% 0%, 100% 100%, 20% 100%);
+    position: absolute;
+    left: 50px;
+    bottom: 70px;
+    width: 500px;
+    height: 100px;
+    background-color: crimson;
+    animation: movee 10s;
+}
+.wheel1{
+    clip-path: circle(50% at center);
+    position: absolute;
+    left: 150px;
+    bottom: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: #111111;
+    animation: movee 10s;
+}
+.wheel2{
+    clip-path: circle(50% at center);
+    position: absolute;
+    left: 400px;
+    bottom: 50px;
+    width: 70px;
+    height: 70px;
+    background-color: #111111;
+    animation: movee 10s;
+}
+@keyframes movee {
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(1800px);
+    }
+}
